@@ -1,0 +1,8 @@
+# Claude Code 로컬 설정
+.claude/settings.local.json
+
+# 의존성
+node_modules/
+
+# 로그
+*.log
