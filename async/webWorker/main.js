@@ -12,4 +12,4 @@ worker.onmessage = function (e) {
 }
 
 // 워커에게 처리할 데이터(숫자)를 전달 → 워커의 onmessage가 실행됨
-worker.postMessage(1_000_000_000_000);
+worker.postMessage(1_000_000_000);
