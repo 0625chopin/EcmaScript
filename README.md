@@ -15,6 +15,10 @@ ecmaScript/
 ├─ async/                  비동기 처리
 │  ├─ callback/callback.js         콜백 패턴
 │  ├─ promise/promise.js           프로미스 패턴 (.then / .catch)
+│  ├─ promiseAll/                  여러 비동기 작업을 모아 처리하는 3가지 방식
+│  │  ├─ promiseAll1.js            Promise.all 병렬 처리 (결과 순서 유지)
+│  │  ├─ promiseAll2_forEach.js    forEach 순회 (함정 + 해결책)
+│  │  └─ promiseAll3_for.js        for...of 순회 (병렬 수집 / 순차 실행)
 │  ├─ async/await/asyncAwait.js    async·await 패턴 (try / catch)
 │  ├─ nonBlockingTask.js           작업 분할로 이벤트 루프 논블로킹
 │  ├─ webWorker/                   별도 스레드(Web Worker)로 무거운 연산 처리
@@ -51,6 +55,9 @@ ecmaScript/
 ### async — 비동기 처리
 - [callback.md](async/callback/callback.md) — 콜백 패턴
 - [promise.md](async/promise/promise.md) — 프로미스 패턴
+- [promiseAll1.md](async/promiseAll/promiseAll1.md) — Promise.all 병렬 처리
+- [promiseAll2_forEach.md](async/promiseAll/promiseAll2_forEach.md) — forEach 순회 (함정과 해결책)
+- [promiseAll3_for.md](async/promiseAll/promiseAll3_for.md) — for...of 순회 (병렬 수집 / 순차 실행)
 - [asyncAwait.md](async/async/await/asyncAwait.md) — async/await 패턴
 - [nonBlockingTask.md](async/nonBlockingTask.md) — 이벤트 루프 논블로킹
 - [main.md](async/webWorker/main.md) — Web Worker (별도 스레드)
