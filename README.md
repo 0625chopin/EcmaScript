@@ -39,6 +39,16 @@ ecmaScript/
    └─ prototypeChainning.js   프로토타입 체이닝
 ```
 
+## 비동기 리팩터링 3단계 (asyncRefactory)
+
+같은 순차 비동기 로직(`fetchA` → `fetchAA` → `fetchAAA`)을 세 가지 방식으로 리팩터링하며 비교합니다. 아래 문서에서 단계별 상세 설명을 볼 수 있습니다.
+
+| 단계 | 방식 | 소스 | 상세 문서 |
+| --- | --- | --- | --- |
+| step1 | 콜백 (콜백 지옥) | [step1.js](async/asyncRefactory/step1.js) | [step1.md](async/asyncRefactory/step1.md) |
+| step2 | 프로미스 체이닝 | [step2.js](async/asyncRefactory/step2.js) | [step2.md](async/asyncRefactory/step2.md) |
+| step3 | async/await | [step3.js](async/asyncRefactory/step3.js) | [step3.md](async/asyncRefactory/step3.md) |
+
 ## 실행 방법
 
 대부분의 예제는 Node.js로 실행합니다.
