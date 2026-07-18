@@ -5,7 +5,6 @@ function fetchA(callback) {
     setTimeout(() => {
         const a = "A";
         console.log("fetchA 완료:", a);
-        debugger;
         callback(a); // 작업 완료 후 결과를 콜백에 전달
     }, 1000);
 }
