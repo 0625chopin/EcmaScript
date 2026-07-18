@@ -17,9 +17,13 @@ ecmaScript/
 │  ├─ promise/promise.js           프로미스 패턴 (.then / .catch)
 │  ├─ async/await/asyncAwait.js    async·await 패턴 (try / catch)
 │  ├─ nonBlockingTask.js           작업 분할로 이벤트 루프 논블로킹
-│  └─ webWorker/                   별도 스레드(Web Worker)로 무거운 연산 처리
-│     ├─ main.js                   메인 스레드 (워커 생성·통신)
-│     └─ worker.js                 워커 스레드 (총합 계산)
+│  ├─ webWorker/                   별도 스레드(Web Worker)로 무거운 연산 처리
+│  │  ├─ main.js                   메인 스레드 (워커 생성·통신)
+│  │  └─ worker.js                 워커 스레드 (총합 계산)
+│  └─ asyncRefactory/              같은 로직을 3방식으로 리팩터링 비교
+│     ├─ step1.js                  콜백 방식 (콜백 지옥)
+│     ├─ step2.js                  프로미스 체이닝
+│     └─ step3.js                  async/await
 │
 ├─ capsule/                캡슐화
 │  └─ getterSetter.js      private 필드(#)와 getter/setter
